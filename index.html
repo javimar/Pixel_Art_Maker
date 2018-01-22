@@ -1,20 +1,24 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Pixel Art Maker!</title>
+    <meta name="author" content="Javier Martín">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="1" max="100" value="1">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
-        <input type="submit">
+        <input type="number" id="input_width" name="width" min="1" max="100" value="1">
+        <input type="submit" id="makeGrid" value="Make grid">
+        <input type="button" id="cleanAllCells" value="Clean grid">
+        <input type="button" id="resetButton" value="Reset grid">
     </form>
 
     <h2>Pick A Color</h2>
