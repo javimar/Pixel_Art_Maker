@@ -55,20 +55,20 @@ $("#makeGrid").on("click", function(event)
 });
 
 
-// Clear multiple cells
+// Clear all cells
 $("#cleanAllCells").click(function()
 {
   $("td").css("background-color", "");
 });
 
-//Reset Pixel CANVAS_GRID_TABLE
+// Reset individual cell
 $("#resetButton").on("click", function(event)
 {
   CANVAS_GRID_TABLE.empty();
 });
 
 
-//Remove color on doubleclick
+// Remove color from cell  doubleclick
 CANVAS_GRID_TABLE.on("dblclick", "td", function()
 {
   $(this).css("background-color", "");
