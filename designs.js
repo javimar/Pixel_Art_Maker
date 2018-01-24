@@ -47,13 +47,12 @@ function makeGrid()
 } // END OF FUNCTION makeGrid()
 
 
-// Create table of grids when "Make Grid" is clicked
-$("#makeGrid").on("click", function(event)
+// Create table of grids when form is submitted
+$('#sizePicker').on('submit', function(event)
 {
   makeGrid();
   event.preventDefault();
 });
-
 
 // Clear all cells
 $("#cleanAllCells").click(function()
